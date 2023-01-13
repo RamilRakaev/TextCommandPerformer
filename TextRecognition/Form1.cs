@@ -11,9 +11,10 @@ namespace TextRecognition
 
         private void SelectImageBtn_Click(object sender, EventArgs e)
         {
-            OpenFileDialog open = new ();
-
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png";
+            OpenFileDialog open = new()
+            {
+                Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp; *.png)|*.jpg; *.jpeg; *.gif; *.bmp; *.png"
+            };
             if (open.ShowDialog() == DialogResult.OK)
             {
 
